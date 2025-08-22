@@ -1,5 +1,9 @@
 import{ useEffect, useRef, useState } from "react";
 
+type Props = {
+  apiUrl?: string; // leave undefined to run in demo mode
+};
+
 /**
  * ConfIAbleARTDemo
  * A lightweight, drop‑in React component to explain adversarial examples.
@@ -20,7 +24,6 @@ export default function ConfIAbleARTDemo({ apiUrl }: { apiUrl?: string }) {
   const [cleanPred, setCleanPred] = useState<string>("—");
   const [advPred, setAdvPred] = useState<string>("—");
   const [busy, setBusy] = useState(false);
-  #const [status, setStatus] = useState<string>(apiUrl ? "API mode" : "Demo mode (no backend)");
   const status = apiUrl ? "API mode" : "Demo mode (no backend)";
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
