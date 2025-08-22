@@ -187,7 +187,7 @@ export default function ConfIAbleARTDemo({ apiUrl }: { apiUrl?: string }) {
           </div>
           {advImageDataUrl && (
             <a className="text-xs text-blue-600 underline mt-2 inline-block" href={advImageDataUrl} download>
-              Download adversarial image (PNG)
+              Bajar la imagen adversaria (PNG)
             </a>
           )}
           <p className="text-xs text-gray-500 mt-2">
