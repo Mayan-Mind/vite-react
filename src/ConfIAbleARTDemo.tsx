@@ -1,5 +1,4 @@
 import{ useEffect, useRef, useState } from "react";
-import.meta.env.VITE_*;
 
 /**
  * ConfIAbleARTDemo
