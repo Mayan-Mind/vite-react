@@ -4,7 +4,7 @@ type Props = {
   apiUrl?: string; // leave undefined to run in demo mode
 };
 
-/**
+/** v03
  * ConfIAbleARTDemo
  * A lightweight, drop‑in React component to explain adversarial examples.
  *
