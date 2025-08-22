@@ -1,4 +1,6 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+#import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import.meta.env.VITE_*;
 
 /**
  * ConfIAbleARTDemo
@@ -20,7 +22,8 @@ export default function ConfIAbleARTDemo({ apiUrl }: { apiUrl?: string }) {
   const [cleanPred, setCleanPred] = useState<string>("—");
   const [advPred, setAdvPred] = useState<string>("—");
   const [busy, setBusy] = useState(false);
-  const [status, setStatus] = useState<string>(apiUrl ? "API mode" : "Demo mode (no backend)");
+  #const [status, setStatus] = useState<string>(apiUrl ? "API mode" : "Demo mode (no backend)");
+  const status = apiUrl ? "API mode" : "Demo mode (no backend)";
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const advCanvasRef = useRef<HTMLCanvasElement>(null);
